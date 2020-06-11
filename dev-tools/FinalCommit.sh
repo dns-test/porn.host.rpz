@@ -26,27 +26,19 @@ set -e #-x -v
 
 printf "\n\tRunning FinalCommit.sh\n"
 
-#exit 0
-
-#cat ${TRAVIS_BUILD_DIR}/dev-tools/output/domains/ACTIVE/list | grep -v "^$" | grep -v "^#" > tempdomains.txt
-#mv tempdomains.txt ${TRAVIS_BUILD_DIR}/PULL_REQUESTS/domains.txt
-
-if [ -f "${TRAVIS_BUILD_DIR}/dev-tools/output/domains/INACTIVE/list" ]
+if [ -f "${PYFUNCEBLE_OUTPUT_DIR}/domains/INACTIVE/list" ]
 then
-	rm "${TRAVIS_BUILD_DIR}/submit_here/apparently_inactive.txt"
-	grep -vE "^($|#)" "${TRAVIS_BUILD_DIR}/dev-tools/output/domains/INACTIVE/list" \
-	  > "${TRAVIS_BUILD_DIR}/submit_here/apparently_inactive.txt"
-	sort -u -f "${TRAVIS_BUILD_DIR}/submit_here/apparently_inactive.txt" \
-else
-	exit 0
+	rm "${PYFUNCEBLE_OUTPUT_DIR}/apparently_inactive.txt"
+	grep -vE "^($|#)" "${PYFUNCEBLE_OUTPUT_DIR}/domains/INACTIVE/list" \
+	  > "${PYFUNCEBLE_OUTPUT_DIR}/apparently_inactive.txt"
 fi
 
 #exit 0
 
 ## fail the pyfunceble test if any submissions are invalid
-if [ -f "${TRAVIS_BUILD_DIR}/dev-tools/output/domains/INVALID/list" ]
+if [ -f "${PYFUNCEBLE_OUTPUT_DIR}/domains/INVALID/list" ]
 then
-	printf "The following are invalid  $(cat "${TRAVIS_BUILD_DIR}/dev-tools/output/domains/INVALID/list")\n"
+	printf "The following are invalid  $(cat "${PYFUNCEBLE_OUTPUT_DIR}/domains/INVALID/list")\n"
 	exit 99
 fi
 
@@ -56,7 +48,6 @@ printf "\n\tGenerate our host file\n"
 
 #exit 0
 
-#bash ${TRAVIS_BUILD_DIR}/dev-tools/UpdateReadme.sh
 bash "${TRAVIS_BUILD_DIR}/dev-tools/GenerateHostsFile.sh"
 
 # *************************************************************
