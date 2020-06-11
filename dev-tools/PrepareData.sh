@@ -60,6 +60,10 @@ if ! [[ "$(git log -1 | tail -1 | xargs)" =~ "ci skip" ]]
 	getNewList && \
 	  getWhiteList && \
 	  WhiteListing
+elif ! [[ "$(git log -1 | tail -1 | xargs)" =~ "ci skip" ]]
+then
+	getWhiteList && \
+	  WhiteListing
 fi
 
 exit ${?}
