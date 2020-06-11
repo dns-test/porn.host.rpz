@@ -60,7 +60,7 @@ if ! [[ "$(git log -1 | tail -1 | xargs)" =~ "ci skip" ]]
 	getNewList && \
 	  getWhiteList && \
 	  WhiteListing
-elif ! [[ "$(git log -1 | tail -1 | xargs)" =~ "ci skip" ]]
+elif [[ "$(git log -1 | tail -1 | xargs)" =~ "Auto Saved" ]]
 then
 	getWhiteList && \
 	  WhiteListing
