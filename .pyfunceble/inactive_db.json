@@ -61663,11 +61663,25 @@
             "last_retested_at_iso": "2020-06-12T10:26:08.343335",
             "status": "INACTIVE"
         },
+        "topgirlsites.blogspot.al": {
+            "included_at_epoch": 1592001700.629556,
+            "included_at_iso": "2020-06-12T22:41:40.629556",
+            "last_retested_at_epoch": 1592001700.629556,
+            "last_retested_at_iso": "2020-06-12T22:41:40.629556",
+            "status": "INACTIVE"
+        },
         "toplivejasmine.blogspot.ae": {
             "included_at_epoch": 1591957568.457483,
             "included_at_iso": "2020-06-12T10:26:08.457483",
             "last_retested_at_epoch": 1591957568.457483,
             "last_retested_at_iso": "2020-06-12T10:26:08.457483",
+            "status": "INACTIVE"
+        },
+        "toplivejasmine.blogspot.al": {
+            "included_at_epoch": 1592001700.860691,
+            "included_at_iso": "2020-06-12T22:41:40.860691",
+            "last_retested_at_epoch": 1592001700.860691,
+            "last_retested_at_iso": "2020-06-12T22:41:40.860691",
             "status": "INACTIVE"
         },
         "toprencontres.blogspot.ae": {
@@ -61677,11 +61691,25 @@
             "last_retested_at_iso": "2020-06-12T10:26:08.529843",
             "status": "INACTIVE"
         },
+        "toprencontres.blogspot.al": {
+            "included_at_epoch": 1592001701.025413,
+            "included_at_iso": "2020-06-12T22:41:41.025413",
+            "last_retested_at_epoch": 1592001701.025413,
+            "last_retested_at_iso": "2020-06-12T22:41:41.025413",
+            "status": "INACTIVE"
+        },
         "torris-secret-pic.blogspot.ae": {
             "included_at_epoch": 1591957568.826154,
             "included_at_iso": "2020-06-12T10:26:08.826154",
             "last_retested_at_epoch": 1591957568.826154,
             "last_retested_at_iso": "2020-06-12T10:26:08.826154",
+            "status": "INACTIVE"
+        },
+        "torris-secret-pic.blogspot.al": {
+            "included_at_epoch": 1592001701.541296,
+            "included_at_iso": "2020-06-12T22:41:41.541296",
+            "last_retested_at_epoch": 1592001701.541296,
+            "last_retested_at_iso": "2020-06-12T22:41:41.541296",
             "status": "INACTIVE"
         },
         "touch-my-dick.blogspot.ae": {
