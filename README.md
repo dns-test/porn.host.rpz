@@ -15,7 +15,7 @@ adult(Pornographic) material at all
 As we can read from our [powerDNS recursor](https://www.powerdns.com/recursor.html)'s
 log, this is a incredible big zone
 
-```
+```bash
 pdns_recursor: Loaded & indexed 4406096 policy records so far for RPZ zone 'porn.host.srv'
 ```
 
