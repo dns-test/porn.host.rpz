@@ -1,0 +1,17 @@
+{
+    "britneyspears.ac": {
+        "epoch": 1611532800.0,
+        "expiration_date": "25-jan-2021",
+        "state": "future"
+    },
+    "sexo.ac": {
+        "epoch": 1094083200.0,
+        "expiration_date": "02-sep-2004",
+        "state": "past"
+    },
+    "tube.ac": {
+        "epoch": 1623715200.0,
+        "expiration_date": "15-jun-2021",
+        "state": "future"
+    }
+}
