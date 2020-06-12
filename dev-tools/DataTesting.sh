@@ -38,7 +38,7 @@ RunFunceble () {
 	PyFunceble --version
 
         PyFunceble --ci -h -m -p "$(nproc --ignore=1)" \
-	    -ex --plain --dns 127.0.0.1:5300 \
+	    -ex --plain --dns 127.0.0.1:5300 -vsc \
             --autosave-minutes 25 --share-logs --idna \
             --hierarchical --ci-branch "${TRAVIS_BRANCH}" \
             --ci-distribution-branch "${TRAVIS_BRANCH}" \
