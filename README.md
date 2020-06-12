@@ -3,7 +3,7 @@
 
 ## porn.host.srv
 This zone is served by [SpamHausTech.com][1], but as it contains tremendous
-numbers of [false-positives][1], we have decided to setup of an PyFunceble
+numbers of [false-positives][2], we have decided to setup of an PyFunceble
 test environment to prove why it is important to maintain a zone file
 
 A first up eye-catcher is the usage of `*.userName.tumblr.com`
@@ -28,7 +28,7 @@ rather than abusing your disk-IO with the `hosts` file, we generate a
 zone regular RPZ supported DNS resolvers.
 
 *Note*: If you'll read more about why you should switch to a local DNS resolver,
-Please read this [Performance Test of Hosts File vs. Dns-recursors][1]
+Please read this [Performance Test of Hosts File vs. Dns-recursors][3]
 
 ### RPZ
 You'll find the RPZ formatted files at [My Privacy DNS](https://www.mypdns.org/w/rpz/)
@@ -45,5 +45,5 @@ youseeporn.com		CNAME	.
 Any helpful [contributions](CONTRIBUTING.md) are appreciated
 
 [1]: <https://docs.spamhaustech.com/dns-firewall/docs/source/zones/050-service-feeds.html#porn> "A huge False Positive zone from spamhaustech"
-[1]: <https://www.mypdns.org/w/falsepositive/> "What is false-positives?"
-[1]: <https://www.mypdns.org/w/performance_test_of_hosts_file_vs_dns-recursors/> "The best DNS firewall for privacy"
+[2]: <https://www.mypdns.org/w/falsepositive/> "What is false-positives?"
+[3]: <https://www.mypdns.org/w/performance_test_of_hosts_file_vs_dns-recursors/> "The best DNS firewall for privacy"
