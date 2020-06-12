@@ -13,7 +13,7 @@
 # Please forward any additions, corrections or comments by logging an issue at
 # https://gitlab.com/my-privacy-dns/support/issues
 
-set -e -x
+set -e #-x
 
 # **********************************
 # Setup input bots and referer lists
@@ -54,14 +54,15 @@ WhiteListing () {
 	uhb_whitelist -wc -m -p $(nproc --ignore=1) -w "${WhiteList}" -f "${testFile}.tmp.txt" -o "${testFile}"
 }
 
-if ! [[ "$(git log -1 | tail -1 | xargs)" =~ "ci skip" ]]
-	then
+if [[ "$(git log -1 | tail -1 | xargs)" =~ "Auto Saved" ]]
+then
+	echo -e "\n\n\tRunning the whitelisting (ONLY)\n\n"
+	getWhiteList && \
+	  WhiteListing
+else
+	echo -e "\n\n\tImporting the RPZ zone\n\n"
 	getNewList && \
 	  getWhiteList && \
-	  WhiteListing
-elif [[ "$(git log -1 | tail -1 | xargs)" =~ "Auto Saved" ]]
-then
-	getWhiteList && \
 	  WhiteListing
 fi
 
