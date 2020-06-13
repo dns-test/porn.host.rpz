@@ -1,4 +1,14 @@
 {
+    "adult.am": {
+        "epoch": 1600732800.0,
+        "expiration_date": "22-sep-2020",
+        "state": "future"
+    },
+    "bittorrent.am": {
+        "epoch": 1604620800.0,
+        "expiration_date": "06-nov-2020",
+        "state": "future"
+    },
     "britneyspears.ac": {
         "epoch": 1611532800.0,
         "expiration_date": "25-jan-2021",
