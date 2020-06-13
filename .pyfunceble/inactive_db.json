@@ -63357,6 +63357,13 @@
             "last_retested_at_iso": "2020-06-12T10:26:23.539011",
             "status": "INACTIVE"
         },
+        "videos-z.blogspot.al": {
+            "included_at_epoch": 1592012110.133245,
+            "included_at_iso": "2020-06-13T01:35:10.133245",
+            "last_retested_at_epoch": 1592012110.133245,
+            "last_retested_at_iso": "2020-06-13T01:35:10.133245",
+            "status": "INACTIVE"
+        },
         "videosdeasiaticas.blogspot.ae": {
             "included_at_epoch": 1591957583.61833,
             "included_at_iso": "2020-06-12T10:26:23.618330",
@@ -63364,11 +63371,25 @@
             "last_retested_at_iso": "2020-06-12T10:26:23.618330",
             "status": "INACTIVE"
         },
+        "videosdeasiaticas.blogspot.al": {
+            "included_at_epoch": 1592012110.28439,
+            "included_at_iso": "2020-06-13T01:35:10.284390",
+            "last_retested_at_epoch": 1592012110.28439,
+            "last_retested_at_iso": "2020-06-13T01:35:10.284390",
+            "status": "INACTIVE"
+        },
         "videosdebuceta.blogspot.ae": {
             "included_at_epoch": 1591957583.679043,
             "included_at_iso": "2020-06-12T10:26:23.679043",
             "last_retested_at_epoch": 1591957583.679043,
             "last_retested_at_iso": "2020-06-12T10:26:23.679043",
+            "status": "INACTIVE"
+        },
+        "videosdebuceta.blogspot.al": {
+            "included_at_epoch": 1592012110.418959,
+            "included_at_iso": "2020-06-13T01:35:10.418959",
+            "last_retested_at_epoch": 1592012110.418959,
+            "last_retested_at_iso": "2020-06-13T01:35:10.418959",
             "status": "INACTIVE"
         },
         "videosmsn.blogspot.ae": {
