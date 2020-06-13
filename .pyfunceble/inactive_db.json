@@ -7189,6 +7189,13 @@
             "last_retested_at_iso": "2020-06-12T10:56:11.482508",
             "status": "INACTIVE"
         },
+        "all4men02.blogspot.am": {
+            "included_at_epoch": 1592062342.303332,
+            "included_at_iso": "2020-06-13T15:32:22.303332",
+            "last_retested_at_epoch": 1592062342.303332,
+            "last_retested_at_iso": "2020-06-13T15:32:22.303332",
+            "status": "INACTIVE"
+        },
         "all4men03.blogspot.ae": {
             "included_at_epoch": 1591936526.659581,
             "included_at_iso": "2020-06-12T04:35:26.659581",
@@ -7201,6 +7208,13 @@
             "included_at_iso": "2020-06-12T10:56:11.550009",
             "last_retested_at_epoch": 1591959371.550009,
             "last_retested_at_iso": "2020-06-12T10:56:11.550009",
+            "status": "INACTIVE"
+        },
+        "all4men03.blogspot.am": {
+            "included_at_epoch": 1592062342.45356,
+            "included_at_iso": "2020-06-13T15:32:22.453560",
+            "last_retested_at_epoch": 1592062342.45356,
+            "last_retested_at_iso": "2020-06-13T15:32:22.453560",
             "status": "INACTIVE"
         },
         "allaboutthekindofhaircutgalle.blogspot.ae": {
@@ -7217,6 +7231,13 @@
             "last_retested_at_iso": "2020-06-12T10:56:11.746010",
             "status": "INACTIVE"
         },
+        "allaboutthekindofhaircutgalle.blogspot.am": {
+            "included_at_epoch": 1592062342.80026,
+            "included_at_iso": "2020-06-13T15:32:22.800260",
+            "last_retested_at_epoch": 1592062342.80026,
+            "last_retested_at_iso": "2020-06-13T15:32:22.800260",
+            "status": "INACTIVE"
+        },
         "allamateurteens.blogspot.ae": {
             "included_at_epoch": 1591936526.687107,
             "included_at_iso": "2020-06-12T04:35:26.687107",
@@ -7229,6 +7250,13 @@
             "included_at_iso": "2020-06-12T10:56:11.844449",
             "last_retested_at_epoch": 1591959371.844449,
             "last_retested_at_iso": "2020-06-12T10:56:11.844449",
+            "status": "INACTIVE"
+        },
+        "allamateurteens.blogspot.am": {
+            "included_at_epoch": 1592062342.980423,
+            "included_at_iso": "2020-06-13T15:32:22.980423",
+            "last_retested_at_epoch": 1592062342.980423,
+            "last_retested_at_iso": "2020-06-13T15:32:22.980423",
             "status": "INACTIVE"
         },
         "allisonrochelle.blogspot.ae": {
@@ -7245,6 +7273,13 @@
             "last_retested_at_iso": "2020-06-12T10:56:12.317310",
             "status": "INACTIVE"
         },
+        "allisonrochelle.blogspot.am": {
+            "included_at_epoch": 1592062343.784399,
+            "included_at_iso": "2020-06-13T15:32:23.784399",
+            "last_retested_at_epoch": 1592062343.784399,
+            "last_retested_at_iso": "2020-06-13T15:32:23.784399",
+            "status": "INACTIVE"
+        },
         "allisonveaauq.blogspot.ae": {
             "included_at_epoch": 1591936526.737768,
             "included_at_iso": "2020-06-12T04:35:26.737768",
@@ -7257,6 +7292,13 @@
             "included_at_iso": "2020-06-12T10:56:12.400980",
             "last_retested_at_epoch": 1591959372.40098,
             "last_retested_at_iso": "2020-06-12T10:56:12.400980",
+            "status": "INACTIVE"
+        },
+        "allisonveaauq.blogspot.am": {
+            "included_at_epoch": 1592062343.937282,
+            "included_at_iso": "2020-06-13T15:32:23.937282",
+            "last_retested_at_epoch": 1592062343.937282,
+            "last_retested_at_iso": "2020-06-13T15:32:23.937282",
             "status": "INACTIVE"
         },
         "allnaked-db.blogspot.ae": {
