@@ -7315,6 +7315,13 @@
             "last_retested_at_iso": "2020-06-12T10:56:12.550312",
             "status": "INACTIVE"
         },
+        "allnaked-db.blogspot.am": {
+            "included_at_epoch": 1592070976.304753,
+            "included_at_iso": "2020-06-13T17:56:16.304753",
+            "last_retested_at_epoch": 1592070976.304753,
+            "last_retested_at_iso": "2020-06-13T17:56:16.304753",
+            "status": "INACTIVE"
+        },
         "allosexe.blogspot.ae": {
             "included_at_epoch": 1591936526.765436,
             "included_at_iso": "2020-06-12T04:35:26.765436",
