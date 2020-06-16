@@ -13944,6 +13944,13 @@
             "last_retested_at_iso": "2020-06-12T10:56:54.623040",
             "status": "INACTIVE"
         },
+        "assuradbacchani.blogspot.am": {
+            "included_at_epoch": 1592285977.043228,
+            "included_at_iso": "2020-06-16T05:39:37.043228",
+            "last_retested_at_epoch": 1592285977.043228,
+            "last_retested_at_iso": "2020-06-16T05:39:37.043228",
+            "status": "INACTIVE"
+        },
         "athenaifbiwwj.blogspot.ae": {
             "included_at_epoch": 1591936530.880519,
             "included_at_iso": "2020-06-12T04:35:30.880519",
