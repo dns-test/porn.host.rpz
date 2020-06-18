@@ -15057,6 +15057,13 @@
             "last_retested_at_iso": "2020-06-12T11:25:43.883707",
             "status": "INACTIVE"
         },
+        "babecuteteen-ww3.blogspot.am": {
+            "included_at_epoch": 1592451178.327804,
+            "included_at_iso": "2020-06-18T03:32:58.327804",
+            "last_retested_at_epoch": 1592451178.327804,
+            "last_retested_at_iso": "2020-06-18T03:32:58.327804",
+            "status": "INACTIVE"
+        },
         "babecuties.blogspot.ae": {
             "included_at_epoch": 1591938269.771549,
             "included_at_iso": "2020-06-12T05:04:29.771549",
@@ -15069,6 +15076,13 @@
             "included_at_iso": "2020-06-12T11:25:43.955638",
             "last_retested_at_epoch": 1591961143.955638,
             "last_retested_at_iso": "2020-06-12T11:25:43.955638",
+            "status": "INACTIVE"
+        },
+        "babecuties.blogspot.am": {
+            "included_at_epoch": 1592451178.487269,
+            "included_at_iso": "2020-06-18T03:32:58.487269",
+            "last_retested_at_epoch": 1592451178.487269,
+            "last_retested_at_iso": "2020-06-18T03:32:58.487269",
             "status": "INACTIVE"
         },
         "babelisting.blogspot.ae": {
@@ -15085,6 +15099,13 @@
             "last_retested_at_iso": "2020-06-12T11:25:44.127596",
             "status": "INACTIVE"
         },
+        "babelisting.blogspot.am": {
+            "included_at_epoch": 1592451178.808291,
+            "included_at_iso": "2020-06-18T03:32:58.808291",
+            "last_retested_at_epoch": 1592451178.808291,
+            "last_retested_at_iso": "2020-06-18T03:32:58.808291",
+            "status": "INACTIVE"
+        },
         "babes2webs.blogspot.ae": {
             "included_at_epoch": 1591938269.840124,
             "included_at_iso": "2020-06-12T05:04:29.840124",
@@ -15097,6 +15118,13 @@
             "included_at_iso": "2020-06-12T11:25:44.413634",
             "last_retested_at_epoch": 1591961144.413634,
             "last_retested_at_iso": "2020-06-12T11:25:44.413634",
+            "status": "INACTIVE"
+        },
+        "babes2webs.blogspot.am": {
+            "included_at_epoch": 1592451179.333595,
+            "included_at_iso": "2020-06-18T03:32:59.333595",
+            "last_retested_at_epoch": 1592451179.333595,
+            "last_retested_at_iso": "2020-06-18T03:32:59.333595",
             "status": "INACTIVE"
         },
         "babesfrombrazil.blogspot.ae": {
