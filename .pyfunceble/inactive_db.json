@@ -18053,6 +18053,13 @@
             "last_retested_at_iso": "2020-06-12T11:26:03.848677",
             "status": "INACTIVE"
         },
+        "bickerish.blogspot.am": {
+            "included_at_epoch": 1592755419.201322,
+            "included_at_iso": "2020-06-21T16:03:39.201322",
+            "last_retested_at_epoch": 1592755419.201322,
+            "last_retested_at_iso": "2020-06-21T16:03:39.201322",
+            "status": "INACTIVE"
+        },
         "big-babe-gallery-list.blogspot.ae": {
             "included_at_epoch": 1591938273.173888,
             "included_at_iso": "2020-06-12T05:04:33.173888",
