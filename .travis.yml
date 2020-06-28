@@ -59,9 +59,6 @@ git:
   #- master
   #- pyfunceble-processing
 
-matrix:
-  fast_finish: true
-
 script:
   - sudo systemctl restart mysql.service
   - sudo mysql -u root -h localhost -e "CREATE DATABASE PyFunceble DEFAULT CHARACTER
