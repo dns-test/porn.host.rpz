@@ -33,8 +33,10 @@ RunFunceble () {
 
     hash PyFunceble
 
+	PYFUNCEBLE_CONFIG_DIR: "${TRAVIS_BUILD_DIR}/.pyfunceble/"
+	PYFUNCEBLE_OUTPUT_DIR: "${TRAVIS_BUILD_DIR}/output/"
+	PYFUNCEBLE_AUTO_CONFIGURATION: yes
 	printf "\n\tYou are running with RunFunceble\n\n"
-	
 	PyFunceble --version
 
         PyFunceble --ci -h -m -p "$(nproc --ignore=1)" \
