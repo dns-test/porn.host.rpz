@@ -1,4 +1,4 @@
 pyfunceble-dev
-ultimate-hosts-blacklist-whitelist
+ultimate-hosts-blacklist-whitelist-dev
 mariadb>=10.4
 wheel
