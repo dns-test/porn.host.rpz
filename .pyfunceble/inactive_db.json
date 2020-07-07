@@ -59227,6 +59227,13 @@
             "last_retested_at_iso": "2020-06-12T12:58:31.220030",
             "status": "INACTIVE"
         },
+        "interracialteens.blogspot.am": {
+            "included_at_epoch": 1594113096.962588,
+            "included_at_iso": "2020-07-07T09:11:36.962588",
+            "last_retested_at_epoch": 1594113096.962588,
+            "last_retested_at_iso": "2020-07-07T09:11:36.962588",
+            "status": "INACTIVE"
+        },
         "interrupted-by-fireworks.blogspot.ae": {
             "included_at_epoch": 1591945288.579496,
             "included_at_iso": "2020-06-12T07:01:28.579496",
@@ -59239,6 +59246,13 @@
             "included_at_iso": "2020-06-12T12:58:31.374699",
             "last_retested_at_epoch": 1591966711.374699,
             "last_retested_at_iso": "2020-06-12T12:58:31.374699",
+            "status": "INACTIVE"
+        },
+        "interrupted-by-fireworks.blogspot.am": {
+            "included_at_epoch": 1594113097.170024,
+            "included_at_iso": "2020-07-07T09:11:37.170024",
+            "last_retested_at_epoch": 1594113097.170024,
+            "last_retested_at_iso": "2020-07-07T09:11:37.170024",
             "status": "INACTIVE"
         },
         "inthenews11.blogspot.ae": {
@@ -59255,6 +59269,13 @@
             "last_retested_at_iso": "2020-06-12T12:58:31.656181",
             "status": "INACTIVE"
         },
+        "inthenews11.blogspot.am": {
+            "included_at_epoch": 1594113097.462631,
+            "included_at_iso": "2020-07-07T09:11:37.462631",
+            "last_retested_at_epoch": 1594113097.462631,
+            "last_retested_at_iso": "2020-07-07T09:11:37.462631",
+            "status": "INACTIVE"
+        },
         "inthevip-4u.blogspot.ae": {
             "included_at_epoch": 1591945288.692821,
             "included_at_iso": "2020-06-12T07:01:28.692821",
@@ -59267,6 +59288,13 @@
             "included_at_iso": "2020-06-12T12:58:31.768747",
             "last_retested_at_epoch": 1591966711.768747,
             "last_retested_at_iso": "2020-06-12T12:58:31.768747",
+            "status": "INACTIVE"
+        },
+        "inthevip-4u.blogspot.am": {
+            "included_at_epoch": 1594113097.622479,
+            "included_at_iso": "2020-07-07T09:11:37.622479",
+            "last_retested_at_epoch": 1594113097.622479,
+            "last_retested_at_iso": "2020-07-07T09:11:37.622479",
             "status": "INACTIVE"
         },
         "intogossip.blogspot.ae": {
@@ -59283,6 +59311,20 @@
             "last_retested_at_iso": "2020-06-12T12:58:32.092200",
             "status": "INACTIVE"
         },
+        "intogossip.blogspot.am": {
+            "included_at_epoch": 1594113097.945823,
+            "included_at_iso": "2020-07-07T09:11:37.945823",
+            "last_retested_at_epoch": 1594113097.945823,
+            "last_retested_at_iso": "2020-07-07T09:11:37.945823",
+            "status": "INACTIVE"
+        },
+        "iransexysexy.blogspot.am": {
+            "included_at_epoch": 1594113098.482814,
+            "included_at_iso": "2020-07-07T09:11:38.482814",
+            "last_retested_at_epoch": 1594113098.482814,
+            "last_retested_at_iso": "2020-07-07T09:11:38.482814",
+            "status": "INACTIVE"
+        },
         "irinasexy.blogspot.ae": {
             "included_at_epoch": 1591945288.985721,
             "included_at_iso": "2020-06-12T07:01:28.985721",
@@ -59295,6 +59337,13 @@
             "included_at_iso": "2020-06-12T12:58:32.929294",
             "last_retested_at_epoch": 1591966712.929294,
             "last_retested_at_iso": "2020-06-12T12:58:32.929294",
+            "status": "INACTIVE"
+        },
+        "irinasexy.blogspot.am": {
+            "included_at_epoch": 1594113098.810908,
+            "included_at_iso": "2020-07-07T09:11:38.810908",
+            "last_retested_at_epoch": 1594113098.810908,
+            "last_retested_at_iso": "2020-07-07T09:11:38.810908",
             "status": "INACTIVE"
         },
         "irishdomesticdiscipline.blogspot.ae": {
@@ -59311,6 +59360,13 @@
             "last_retested_at_iso": "2020-06-12T12:58:33.028525",
             "status": "INACTIVE"
         },
+        "irishdomesticdiscipline.blogspot.am": {
+            "included_at_epoch": 1594113098.96652,
+            "included_at_iso": "2020-07-07T09:11:38.966520",
+            "last_retested_at_epoch": 1594113098.96652,
+            "last_retested_at_iso": "2020-07-07T09:11:38.966520",
+            "status": "INACTIVE"
+        },
         "islandgay.blogspot.ae": {
             "included_at_epoch": 1591945289.160328,
             "included_at_iso": "2020-06-12T07:01:29.160328",
@@ -59323,6 +59379,13 @@
             "included_at_iso": "2020-06-12T12:58:33.621980",
             "last_retested_at_epoch": 1591966713.62198,
             "last_retested_at_iso": "2020-06-12T12:58:33.621980",
+            "status": "INACTIVE"
+        },
+        "islandgay.blogspot.am": {
+            "included_at_epoch": 1594113099.489983,
+            "included_at_iso": "2020-07-07T09:11:39.489983",
+            "last_retested_at_epoch": 1594113099.489983,
+            "last_retested_at_iso": "2020-07-07T09:11:39.489983",
             "status": "INACTIVE"
         },
         "istermister.blogspot.ae": {
@@ -59339,6 +59402,13 @@
             "last_retested_at_iso": "2020-06-12T13:27:22.187087",
             "status": "INACTIVE"
         },
+        "istermister.blogspot.am": {
+            "included_at_epoch": 1594113099.88355,
+            "included_at_iso": "2020-07-07T09:11:39.883550",
+            "last_retested_at_epoch": 1594113099.88355,
+            "last_retested_at_iso": "2020-07-07T09:11:39.883550",
+            "status": "INACTIVE"
+        },
         "itaintwilliam.blogspot.ae": {
             "included_at_epoch": 1591945289.310227,
             "included_at_iso": "2020-06-12T07:01:29.310227",
@@ -59351,6 +59421,13 @@
             "included_at_iso": "2020-06-12T13:27:22.309149",
             "last_retested_at_epoch": 1591968442.309149,
             "last_retested_at_iso": "2020-06-12T13:27:22.309149",
+            "status": "INACTIVE"
+        },
+        "itaintwilliam.blogspot.am": {
+            "included_at_epoch": 1594113100.080765,
+            "included_at_iso": "2020-07-07T09:11:40.080765",
+            "last_retested_at_epoch": 1594113100.080765,
+            "last_retested_at_iso": "2020-07-07T09:11:40.080765",
             "status": "INACTIVE"
         },
         "italywifax.blogspot.ae": {
@@ -59367,6 +59444,13 @@
             "last_retested_at_iso": "2020-06-12T13:27:22.496908",
             "status": "INACTIVE"
         },
+        "italywifax.blogspot.am": {
+            "included_at_epoch": 1594113100.369806,
+            "included_at_iso": "2020-07-07T09:11:40.369806",
+            "last_retested_at_epoch": 1594113100.369806,
+            "last_retested_at_iso": "2020-07-07T09:11:40.369806",
+            "status": "INACTIVE"
+        },
         "its-booty-time.blogspot.ae": {
             "included_at_epoch": 1591945289.440425,
             "included_at_iso": "2020-06-12T07:01:29.440425",
@@ -59379,6 +59463,13 @@
             "included_at_iso": "2020-06-12T13:27:22.654009",
             "last_retested_at_epoch": 1591968442.654009,
             "last_retested_at_iso": "2020-06-12T13:27:22.654009",
+            "status": "INACTIVE"
+        },
+        "its-booty-time.blogspot.am": {
+            "included_at_epoch": 1594113100.596236,
+            "included_at_iso": "2020-07-07T09:11:40.596236",
+            "last_retested_at_epoch": 1594113100.596236,
+            "last_retested_at_iso": "2020-07-07T09:11:40.596236",
             "status": "INACTIVE"
         },
         "ivana-fuk-alot.blogspot.ae": {
@@ -59395,6 +59486,13 @@
             "last_retested_at_iso": "2020-06-12T13:27:22.927476",
             "status": "INACTIVE"
         },
+        "ivana-fuk-alot.blogspot.am": {
+            "included_at_epoch": 1594113101.016784,
+            "included_at_iso": "2020-07-07T09:11:41.016784",
+            "last_retested_at_epoch": 1594113101.016784,
+            "last_retested_at_iso": "2020-07-07T09:11:41.016784",
+            "status": "INACTIVE"
+        },
         "ivanafuckalotsblog.blogspot.ae": {
             "included_at_epoch": 1591947010.523359,
             "included_at_iso": "2020-06-12T07:30:10.523359",
@@ -59407,6 +59505,13 @@
             "included_at_iso": "2020-06-12T13:27:23.047851",
             "last_retested_at_epoch": 1591968443.047851,
             "last_retested_at_iso": "2020-06-12T13:27:23.047851",
+            "status": "INACTIVE"
+        },
+        "ivanafuckalotsblog.blogspot.am": {
+            "included_at_epoch": 1594113101.206492,
+            "included_at_iso": "2020-07-07T09:11:41.206492",
+            "last_retested_at_epoch": 1594113101.206492,
+            "last_retested_at_iso": "2020-07-07T09:11:41.206492",
             "status": "INACTIVE"
         },
         "jackoffmaterial2.blogspot.ae": {
@@ -59423,6 +59528,13 @@
             "last_retested_at_iso": "2020-06-12T13:27:23.635697",
             "status": "INACTIVE"
         },
+        "jackoffmaterial2.blogspot.am": {
+            "included_at_epoch": 1594113102.108973,
+            "included_at_iso": "2020-07-07T09:11:42.108973",
+            "last_retested_at_epoch": 1594113102.108973,
+            "last_retested_at_iso": "2020-07-07T09:11:42.108973",
+            "status": "INACTIVE"
+        },
         "jaguarsexy.blogspot.ae": {
             "included_at_epoch": 1591947010.944374,
             "included_at_iso": "2020-06-12T07:30:10.944374",
@@ -59435,6 +59547,13 @@
             "included_at_iso": "2020-06-12T13:27:24.140157",
             "last_retested_at_epoch": 1591968444.140157,
             "last_retested_at_iso": "2020-06-12T13:27:24.140157",
+            "status": "INACTIVE"
+        },
+        "jaguarsexy.blogspot.am": {
+            "included_at_epoch": 1594113102.868935,
+            "included_at_iso": "2020-07-07T09:11:42.868935",
+            "last_retested_at_epoch": 1594113102.868935,
+            "last_retested_at_iso": "2020-07-07T09:11:42.868935",
             "status": "INACTIVE"
         },
         "jamielynndanni.blogspot.ae": {
