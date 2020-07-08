@@ -61061,6 +61061,13 @@
             "last_retested_at_iso": "2020-06-12T13:27:38.487941",
             "status": "INACTIVE"
         },
+        "justmenstuff.blogspot.am": {
+            "included_at_epoch": 1594235063.189659,
+            "included_at_iso": "2020-07-08T19:04:23.189659",
+            "last_retested_at_epoch": 1594235063.189659,
+            "last_retested_at_iso": "2020-07-08T19:04:23.189659",
+            "status": "INACTIVE"
+        },
         "justteensblog.blogspot.ae": {
             "included_at_epoch": 1591947016.696701,
             "included_at_iso": "2020-06-12T07:30:16.696701",
@@ -61075,6 +61082,13 @@
             "last_retested_at_iso": "2020-06-12T13:27:38.629896",
             "status": "INACTIVE"
         },
+        "justteensblog.blogspot.am": {
+            "included_at_epoch": 1594235063.43576,
+            "included_at_iso": "2020-07-08T19:04:23.435760",
+            "last_retested_at_epoch": 1594235063.43576,
+            "last_retested_at_iso": "2020-07-08T19:04:23.435760",
+            "status": "INACTIVE"
+        },
         "kamfreedownload.blogspot.ae": {
             "included_at_epoch": 1591947016.913353,
             "included_at_iso": "2020-06-12T07:30:16.913353",
@@ -61087,6 +61101,13 @@
             "included_at_iso": "2020-06-12T13:27:39.164010",
             "last_retested_at_epoch": 1591968459.16401,
             "last_retested_at_iso": "2020-06-12T13:27:39.164010",
+            "status": "INACTIVE"
+        },
+        "kamfreedownload.blogspot.am": {
+            "included_at_epoch": 1594235064.25613,
+            "included_at_iso": "2020-07-08T19:04:24.256130",
+            "last_retested_at_epoch": 1594235064.25613,
+            "last_retested_at_iso": "2020-07-08T19:04:24.256130",
             "status": "INACTIVE"
         },
         "karenrambat.blogspot.ae": {
