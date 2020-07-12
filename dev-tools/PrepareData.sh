@@ -32,8 +32,6 @@ getNewList () {
 	echo -e "\n\tDomains to test: $(wc -l < "${testFile}")\n"
 }
 
-head "${testFile}"
-
 # ***********************************
 # Deletion of all whitelisted domains
 # ***********************************
@@ -66,5 +64,7 @@ else
 	  getWhiteList && \
 	  WhiteListing
 fi
+
+head "${testFile}"
 
 exit ${?}
