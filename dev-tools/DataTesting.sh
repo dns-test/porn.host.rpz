@@ -42,8 +42,9 @@ RunFunceble () {
             --hierarchical --ci-branch "${TRAVIS_BRANCH}" \
             --ci-distribution-branch "${TRAVIS_BRANCH}" \
             --commit-autosave-message "V1.${version}.${TRAVIS_BUILD_NUMBER} [Auto Saved]" \
-            --commit-results-message "V1.${version}.${TRAVIS_BUILD_NUMBER}" \
+            --commit-results-message "V1.${version}.${TRAVIS_BUILD_NUMBER}" \ 
             --cmd-before-end "bash ${TRAVIS_BUILD_DIR}/dev-tools/FinalCommit.sh" \
+	    --database-type mariadb
             -f "${testFile}"
 
 }
