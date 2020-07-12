@@ -28,7 +28,7 @@ testFile="${TRAVIS_BUILD_DIR}/PULL_REQUESTS/domains.txt"
 getNewList () {
 	drill axfr @35.156.219.71 -p 53 porn.host.srv \
 	  | grep -vE "^(;|$|\*)" | sed -e 's/\.porn\.host\.srv\.//g;/^86400$/d;/^adult$/d' \
-	  | awk '{ printf ("%s\n",tolower($1))}' > "${testFile}"
+	  | awk '{ printf ("%s\n",tolower($1))}' | sed -e '/porn\.host\.srv\./d' > "${testFile}"
 	echo -e "\n\tDomains to test: $(wc -l < "${testFile}")\n"
 }
 
