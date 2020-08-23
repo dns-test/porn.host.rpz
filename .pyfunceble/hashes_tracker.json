@@ -1,13 +1,13 @@
 {
     "/home/travis/build/dns-test/porn.host.rpz/PULL_REQUESTS/domains.txt": {
         "base": {
-            "datetime_iso": "2020-08-19T11:53:16.263410",
-            "hash": "089021a23ccae5bced13b931233c12c553508d5a0302092a8a3211dc"
+            "datetime_iso": "2020-08-23T14:08:37.995854",
+            "hash": "e97fb26028843de1e3188f41a3d8ee8693ad8c771d9b9c39497da1bf"
         },
         "latest": {
-            "datetime_iso": "2020-08-23T11:53:50.495359",
-            "hash": "089021a23ccae5bced13b931233c12c553508d5a0302092a8a3211dc"
+            "datetime_iso": "2020-08-23T14:08:37.995854",
+            "hash": "e97fb26028843de1e3188f41a3d8ee8693ad8c771d9b9c39497da1bf"
         },
-        "position": 2367735
+        "position": 48925
     }
 }
