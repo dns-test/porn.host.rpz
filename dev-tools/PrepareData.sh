@@ -41,13 +41,16 @@ getNewList () {
 
 WhiteList="${git_dir}/whitelist"
 
-#getWhiteList () {
-#    wget -qO- 'https://raw.githubusercontent.com/mypdns/matrix/master/source/whitelist/domain.list' \
-#    | awk '{ printf("%s\n",tolower($1)) }' >> "${WhiteList}"
-#    wget -qO- 'https://raw.githubusercontent.com/mypdns/matrix/master/source/whitelist/wildcard.list' \
-#    | awk '{ printf("ALL %s\n",tolower($1)) }' >> "${WhiteList}"
-#    sort -u -f "${WhiteList}" -o "${WhiteList}"
-#}
+getWhiteList () {
+    wget -qO- 'https://raw.githubusercontent.com/mypdns/matrix/master/source/whitelist/domain.list' \
+    | awk '{ printf("%s\n",tolower($1)) }' >> "${WhiteList}"
+    wget -qO- 'https://raw.githubusercontent.com/mypdns/matrix/master/source/whitelist/wildcard.list' \
+    | awk '{ printf("ALL %s\n",tolower($1)) }' >> "${WhiteList}"
+
+	cat "${git_dir}/submit_here/whitelist" >> "${git_dir}/whitelist"
+
+    sort -u -f "${WhiteList}" -o "${WhiteList}"
+}
 
 
 # https://github.com/Ultimate-Hosts-Blacklist/whitelist/tree/script-dev
@@ -57,8 +60,6 @@ WhiteListing () {
 	mv "${testFile}" "${testFile}.tmp.txt"
 
 	uhb_whitelist --hierachical-sorting -wc -m -w "${WhiteList}" \
-	  --all 'https://raw.githubusercontent.com/mypdns/matrix/master/source/whitelist/domain.list' \
-	  --reg 'https://raw.githubusercontent.com/mypdns/matrix/master/source/whitelist/wildcard.list' \
 	  -f "${testFile}.tmp.txt" -o "${testFile}"
 
 	rm "${testFile}.tmp.txt"
