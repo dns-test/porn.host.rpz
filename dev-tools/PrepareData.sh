@@ -65,7 +65,7 @@ else
 	  WhiteListing
 fi
 
-echo -e "\n\t$(nproc)"
+echo -e "\n\tNumber of cores availble: $(nproc)"
 
 head "${testFile}"
 
