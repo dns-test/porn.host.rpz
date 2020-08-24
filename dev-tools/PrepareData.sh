@@ -65,6 +65,8 @@ else
 	  WhiteListing
 fi
 
+echo -e "\n\t$(nproc)"
+
 head "${testFile}"
 
 exit ${?}
