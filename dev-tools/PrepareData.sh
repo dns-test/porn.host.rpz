@@ -41,31 +41,40 @@ getNewList () {
 
 WhiteList="${git_dir}/whitelist"
 
-getWhiteList () {
-    wget -qO- 'https://raw.githubusercontent.com/mypdns/matrix/master/source/whitelist/domain.list' \
-    | awk '{ printf("%s\n",tolower($1)) }' >> "${WhiteList}"
-    wget -qO- 'https://raw.githubusercontent.com/mypdns/matrix/master/source/whitelist/wildcard.list' \
-    | awk '{ printf("ALL %s\n",tolower($1)) }' >> "${WhiteList}"
-    sort -u -f "${WhiteList}" -o "${WhiteList}"
-}
+#getWhiteList () {
+#    wget -qO- 'https://raw.githubusercontent.com/mypdns/matrix/master/source/whitelist/domain.list' \
+#    | awk '{ printf("%s\n",tolower($1)) }' >> "${WhiteList}"
+#    wget -qO- 'https://raw.githubusercontent.com/mypdns/matrix/master/source/whitelist/wildcard.list' \
+#    | awk '{ printf("ALL %s\n",tolower($1)) }' >> "${WhiteList}"
+#    sort -u -f "${WhiteList}" -o "${WhiteList}"
+#}
+
+
+# https://github.com/Ultimate-Hosts-Blacklist/whitelist/tree/script-dev
 
 WhiteListing () {
 	hash uhb_whitelist
 	mv "${testFile}" "${testFile}.tmp.txt"
-	uhb_whitelist -wc -m -w "${WhiteList}" -f "${testFile}.tmp.txt" -o "${testFile}"
+
+	uhb_whitelist --hierachical-sorting -wc -m -w "${WhiteList}" \
+	  --all 'https://raw.githubusercontent.com/mypdns/matrix/master/source/whitelist/domain.list' \
+	  --reg 'https://raw.githubusercontent.com/mypdns/matrix/master/source/whitelist/wildcard.list' \
+	  -f "${testFile}.tmp.txt" -o "${testFile}"
+
 	rm "${testFile}.tmp.txt"
 }
 
 if [[ "$(git log -1 | tail -1 | xargs)" =~ "Auto Saved" ]]
 then
 	echo -e "\n\n\tRunning the whitelisting (ONLY)\n\n"
-	getWhiteList && \
+	#getWhiteList && \
 	  WhiteListing
 else
 	echo -e "\n\n\tImporting the RPZ zone\n\n"
 	getNewList && \
-	  getWhiteList && \
 	  WhiteListing
+	  #getWhiteList && \
+	  #WhiteListing
 fi
 
 echo -e "\n\tNumber of cores availble: $(nproc)"
