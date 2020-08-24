@@ -19,16 +19,18 @@ set -e #-x
 # Setup input bots and referer lists
 # **********************************
 
+git_dir="$(git rev-parse --show-toplevel)"
+
 # Type the url of source here
-testFile="${TRAVIS_BUILD_DIR}/PULL_REQUESTS/domains.txt"
+testFile="${git_dir}/PULL_REQUESTS/domains.txt"
 
 # **************************************************************************
 # Sort lists alphabetically and remove duplicates before cleaning Dead Hosts
 # **************************************************************************
 getNewList () {
 	drill axfr @35.156.219.71 -p 53 porn.host.srv \
-	  | grep -vE "^(;|$|\*)" | sed -e 's/\.porn\.host\.srv\.//g;/^86400$/d;/^adult$/d;/^adult$/d' \
-	  | awk '{ printf ("%s\n",tolower($1))}' | sed -e '/porn\.host\.srv\./d' > "${testFile}"
+	  | grep -vE "^(;|$|\*)" | sed -e 's/\.porn\.host\.srv\.//g;/^86400$/d;/^adult$/d' \
+	  | awk '{ printf ("%s\n",tolower($1))}' | sed -e '/porn\.host\.srv\./d;/^adult$/d' > "${testFile}"
 	echo -e "\n\tDomains to test: $(wc -l < "${testFile}")\n"
 }
 
@@ -37,12 +39,12 @@ getNewList () {
 # ***********************************
 # This following should be replaced by a local whitelist
 
-WhiteList="${TRAVIS_BUILD_DIR}/whitelist"
+WhiteList="${git_dir}/whitelist"
 
 getWhiteList () {
-    wget -qO- 'https://gitlab.com/my-privacy-dns/matrix/matrix/raw/master/source/whitelist/domain.list' \
+    wget -qO- 'https://raw.githubusercontent.com/mypdns/matrix/master/source/whitelist/domain.list' \
     | awk '{ printf("%s\n",tolower($1)) }' >> "${WhiteList}"
-    wget -qO- 'https://gitlab.com/my-privacy-dns/matrix/matrix/raw/master/source/whitelist/wildcard.list' \
+    wget -qO- 'https://raw.githubusercontent.com/mypdns/matrix/master/source/whitelist/wildcard.list' \
     | awk '{ printf("ALL %s\n",tolower($1)) }' >> "${WhiteList}"
     sort -u -f "${WhiteList}" -o "${WhiteList}"
 }
@@ -50,7 +52,8 @@ getWhiteList () {
 WhiteListing () {
 	hash uhb_whitelist
 	mv "${testFile}" "${testFile}.tmp.txt"
-	uhb_whitelist -wc -m -p $(nproc --ignore=1) -w "${WhiteList}" -f "${testFile}.tmp.txt" -o "${testFile}"
+	uhb_whitelist -wc -m -w "${WhiteList}" -f "${testFile}.tmp.txt" -o "${testFile}"
+	rm "${testFile}.tmp.txt"
 }
 
 if [[ "$(git log -1 | tail -1 | xargs)" =~ "Auto Saved" ]]
