@@ -39,6 +39,7 @@ testFile="${git_dir}/PULL_REQUESTS/domains.txt"
 getNewList () {
 	truncate -s 0 "${testFile}"
 	drill axfr @35.156.219.71 -p 53 porn.host.srv > "${testFile}"
+	git add "${testFile}"
 }
 
 # ***********************************
