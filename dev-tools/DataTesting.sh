@@ -56,7 +56,7 @@ RunFunceble () {
         --commit-autosave-message "${version}.${TRAVIS_BUILD_NUMBER} [Auto Saved]" \
         --commit-results-message "${version}.${TRAVIS_BUILD_NUMBER}" \
         --cmd-before-end "bash ${git_dir}/dev-tools/FinalCommit.sh" \
-        -f "${testFile}"
+        --rpz -f "${testFile}"
 }
 RunFunceble
 
