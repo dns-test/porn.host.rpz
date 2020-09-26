@@ -51,11 +51,9 @@ install:
   - python --version --version
   - pip --version
   - conda --version
-  - pip uninstall -y pyfunceble pyfunceble-dev 
   - pip install --no-cache-dir --upgrade ultimate-hosts-blacklist-whitelist-dev dnspython[dnssec,idna]
-  #- pip install --no-cache-dir -U git+https://github.com/funilrys/PyFunceble@raw2sqlalchemy
-  - pip install --no-cache-dir --upgrade pyfunceble-dev
-  #- pip install git+https://github.com/funilrys/PyFunceble.git@dev
+  - pip install --no-cache-dir -U git+https://github.com/funilrys/PyFunceble@rpz-syntax-check
+  #- pip install --no-cache-dir --upgrade pyfunceble-dev
   - rm miniconda.sh
 
 git:
