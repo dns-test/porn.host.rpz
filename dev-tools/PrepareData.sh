@@ -27,11 +27,18 @@ testFile="${git_dir}/PULL_REQUESTS/domains.txt"
 # **************************************************************************
 # Sort lists alphabetically and remove duplicates before cleaning Dead Hosts
 # **************************************************************************
+#getNewList () {
+#	drill axfr @35.156.219.71 -p 53 porn.host.srv \
+#	  | grep -vE "^(;|$|\*)" | sed -e 's/\.porn\.host\.srv\.//g;/^86400$/d;/^adult$/d' \
+#	  | awk '{ printf ("%s\n",tolower($1))}' | sed -e '/porn\.host\.srv\./d;/^adult$/d' > "${testFile}"
+#	echo -e "\n\tDomains to test: $(wc -l < "${testFile}")\n"
+#}
+
+## Testing PyFunceble --rpz
+
 getNewList () {
-	drill axfr @35.156.219.71 -p 53 porn.host.srv \
-	  | grep -vE "^(;|$|\*)" | sed -e 's/\.porn\.host\.srv\.//g;/^86400$/d;/^adult$/d' \
-	  | awk '{ printf ("%s\n",tolower($1))}' | sed -e '/porn\.host\.srv\./d;/^adult$/d' > "${testFile}"
-	echo -e "\n\tDomains to test: $(wc -l < "${testFile}")\n"
+	truncate -s 0 "${testFile}"
+	drill axfr @35.156.219.71 -p 53 porn.host.srv > "${testFile}"
 }
 
 # ***********************************
