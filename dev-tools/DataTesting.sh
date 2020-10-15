@@ -47,16 +47,15 @@ RunFunceble () {
 	     #-db --database-type mariadb \
             #-f "${testFile}"
 
-	pyfunceble --ci -q -h -ex --plain \
-		--dns 127.0.0.1:5300 \
-        --autosave-minutes 15 --share-logs --http --idna --dots \
-        --hierarchical --ci-branch "${TRAVIS_BRANCH}" \
-        --ci-distribution-branch "${TRAVIS_BRANCH}" \
-        -db --database-type mariadb -m \
-        --commit-autosave-message "${version}.${TRAVIS_BUILD_NUMBER} [Auto Saved]" \
-        --commit-results-message "${version}.${TRAVIS_BUILD_NUMBER}" \
-        --cmd-before-end "bash ${git_dir}/dev-tools/FinalCommit.sh" \
-        --rpz -f "${testFile}"
+	pyfunceble --ci -q -nf -ex --plain \
+	  --dns 127.0.0.1:5300 -db --database-type mariadb \
+          --autosave-minutes 15 --share-logs --http --idna --dots \
+          --hierarchical --ci-branch "${TRAVIS_BRANCH}" \
+          --ci-distribution-branch "${TRAVIS_BRANCH}" \
+          --commit-autosave-message "${version}.${TRAVIS_BUILD_NUMBER} [Auto Saved]" \
+          --commit-results-message "${version}.${TRAVIS_BUILD_NUMBER}" \
+          --cmd-before-end "bash ${git_dir}/dev-tools/FinalCommit.sh" \
+          --rpz -f "${testFile}"
 }
 RunFunceble
 
