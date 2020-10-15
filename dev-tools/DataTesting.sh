@@ -47,7 +47,7 @@ RunFunceble () {
 	     #-db --database-type mariadb \
             #-f "${testFile}"
 
-	pyfunceble --ci -q -nf -ex --plain \
+	pyfunceble --ci -q -h -ex --plain \
 	  --dns 127.0.0.1:5300 -db --database-type mariadb \
           --autosave-minutes 15 --share-logs --http --idna --dots \
           --hierarchical --ci-branch "${TRAVIS_BRANCH}" \
