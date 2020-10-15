@@ -20,7 +20,7 @@ pdns_recursor: Loaded & indexed 4406096 policy records so far for RPZ zone 'porn
 ```
 
 To see the number of FP's you should keep a eye on this file
-<https://github.com/dns-test/porn.host.rpz/blob/master/dev-tools/output/logs/percentage/percentage.txt>
+<https://github.com/dns-test/porn.host.rpz/blob/master/output/logs/percentage/percentage.txt>
 
 ### DNS zones
 If you are so lucky that you have updated your system to use a DNS resolver
