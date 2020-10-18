@@ -49,7 +49,7 @@ RunFunceble () {
 
 	pyfunceble --ci -q -h -ex --plain \
 	  --dns 127.0.0.1:5300 -db --database-type mariadb \
-          --autosave-minutes 15 --share-logs --http --idna --dots \
+          --autosave-minutes 2 --share-logs --http --idna --dots \
           --hierarchical --ci-branch "${TRAVIS_BRANCH}" \
           --ci-distribution-branch "${TRAVIS_BRANCH}" \
           --commit-autosave-message "${version}.${TRAVIS_BUILD_NUMBER} [Auto Saved]" \
