@@ -20,7 +20,8 @@ env:
   - PYFUNCEBLE_OUTPUT_LOCATION: "${TRAVIS_BUILD_DIR}/"
   - PYFUNCEBLE_AUTO_CONFIGURATION: yes
   - PYFUNCEBLE_DB_CHARSET="${DB_CHARSET}"
-  - PYFUNCEBLE_DB_HOST="${DB_HOST}"
+  #- PYFUNCEBLE_DB_HOST="${DB_HOST}"
+  - PYFUNCEBLE_DB_HOST=localhost
   - PYFUNCEBLE_DB_NAME="${DB_NAME}"
   - PYFUNCEBLE_DB_USERNAME="${DB_USERNAME}"
   - PYFUNCEBLE_DB_PASSWORD="${DB_PASSWORD}"
@@ -52,8 +53,8 @@ install:
   - pip --version
   - conda --version
   - pip install --no-cache-dir --upgrade ultimate-hosts-blacklist-whitelist-dev dnspython[dnssec,idna]
-  #- pip install --no-cache-dir -U git+https://github.com/funilrys/PyFunceble@rpz-syntax-check
-  - pip install --no-cache-dir --upgrade pyfunceble-dev
+  - pip install --no-cache-dir -U git+https://github.com/funilrys/PyFunceble@4.0.0-dev#egg=PyFunceble-dev
+  #- pip install --no-cache-dir --upgrade pyfunceble-dev
   - rm miniconda.sh
 
 git:
