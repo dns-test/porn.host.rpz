@@ -49,28 +49,39 @@ getNewList () {
 
 WhiteList="${git_dir}/whitelist"
 
-getWhiteList () {
-    wget -qO- 'https://raw.githubusercontent.com/mypdns/matrix/master/source/whitelist/domain.list' \
-    | awk '{ printf("%s\n",tolower($1)) }' >> "${WhiteList}"
-    wget -qO- 'https://raw.githubusercontent.com/mypdns/matrix/master/source/whitelist/wildcard.list' \
-    | awk '{ printf("ALL %s\n",tolower($1)) }' >> "${WhiteList}"
-
-	cat "${git_dir}/submit_here/whitelist" >> "${git_dir}/whitelist"
-
-    sort -u -f "${WhiteList}" -o "${WhiteList}"
-}
+#getWhiteList () {
+#    wget -qO- 'https://raw.githubusercontent.com/mypdns/matrix/master/source/whitelist/domain.list' \
+#    | awk '{ printf("%s\n",tolower($1)) }' >> "${WhiteList}"
+#    wget -qO- 'https://raw.githubusercontent.com/mypdns/matrix/master/source/whitelist/wildcard.list' \
+#    | awk '{ printf("ALL %s\n",tolower($1)) }' >> "${WhiteList}"
+#
+#	cat "${git_dir}/submit_here/whitelist" >> "${git_dir}/whitelist"
+#
+#   sort -u -f "${WhiteList}" -o "${WhiteList}"
+#}
 
 
 # https://github.com/Ultimate-Hosts-Blacklist/whitelist/tree/script-dev
 
+#WhiteListing () {
+#	hash uhb_whitelist
+#	mv "${testFile}" "${testFile}.tmp.txt"
+#
+#	uhb_whitelist --hierachical-sorting -wc -m -w "${WhiteList}" \
+#	  -f "${testFile}.tmp.txt" -o "${testFile}"
+#
+#	rm "${testFile}.tmp.txt"
+#}
+
 WhiteListing () {
-	hash uhb_whitelist
-	mv "${testFile}" "${testFile}.tmp.txt"
+    hash uhb_whitelist
 
-	uhb_whitelist --hierachical-sorting -wc -m -w "${WhiteList}" \
-	  -f "${testFile}.tmp.txt" -o "${testFile}"
+    uhb_whitelist --hierachical-sorting -wc -m -w "${WhiteList}" \
+      --all 'https://raw.githubusercontent.com/mypdns/matrix/master/source/whitelist/domain.list' \
+      --reg 'https://raw.githubusercontent.com/mypdns/matrix/master/source/whitelist/wildcard.list' \
+      -f "${testFile}" -o "${testFile}"
 
-	rm "${testFile}.tmp.txt"
+    rm "${testFile}.tmp.txt"
 }
 
 if [[ "$(git log -1 | tail -1 | xargs)" =~ "Auto Saved" ]]
@@ -80,8 +91,7 @@ then
 	  WhiteListing
 else
 	echo -e "\n\n\tImporting the RPZ zone\n\n"
-	getNewList && \
-	  WhiteListing
+	WhiteListing
 	  #getWhiteList && \
 	  #WhiteListing
 fi
