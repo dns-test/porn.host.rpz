@@ -77,7 +77,7 @@ WhiteListing () {
     hash uhb_whitelist
 
     uhb_whitelist --hierachical-sorting -wc -m -w "${WhiteList}" \
-      --all 'https://raw.githubusercontent.com/mypdns/matrix/master/source/whitelist/domain.list' \
+      --all 'https://raw.githubusercontent.com/mypdns/matrix/master/source/whitelist/domains.list' \
       --reg 'https://raw.githubusercontent.com/mypdns/matrix/master/source/whitelist/wildcard.list' \
       -f "${testFile}" --output "${testFile}"
 
