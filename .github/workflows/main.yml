@@ -81,33 +81,52 @@ jobs:
       #     -f "${{ github.workspace }}/.pyfunceble/domains.txt"
 
   scheduler:
-    name: Trigger action
+    name: Run PyFunceble against the files and push result to repository
     runs-on: "${{ matrix.os }}"
 
     strategy:
       fail-fast: false
       matrix:
-        python_version:
-          - "3.9.1"
-        os:
-          - ubuntu-latest
+          python_version:
+            - "3.9.1"
+          os:
+            - ubuntu-20.04
 
     steps:
       - uses: actions/checkout@v2
         name: Clone repository
         with:
-          token: "${{ secrets.GITHUB_TOKEN }}"
+          token: ${{ secrets.GITHUB_TOKEN }}
 
-      - name: Create local change
-        run: |
-          date +%s > "${{ github.workspace }}/.trigger"
-      - name: Commit changes
-        run: |
-          git config --local user.email "$GIT_EMAIL"
-          git config --local user.name "$GIT_NAME"
-          git commit -m "Launch test" -a
-      - name: Push changes
-        uses: ad-m/github-push-action@master
+      - name: Set up Python ${{ matrix.python_version }}
+        uses: actions/setup-python@v2
         with:
-          github_token: ${{ secrets.GITHUB_TOKEN }}
-          branch: ${{ github.ref }}
+          python-version: ${{ matrix.python_version }}
+
+      - name: Install ldnsutils
+        run: |
+          sudo DEBIAN_FRONTEND=noninteractive apt-get -y install ldnsutils
+
+      - name: Install PyFunceble
+        run: |
+          pip install --no-cache-dir --pre PyFunceble-dev
+
+      - name: Get PyFunceble version
+        run: |
+          PyFunceble --version
+
+      - name: Install UHBW
+        run: |
+          pip install --no-cache-dir ultimate-hosts-blacklist-whitelist-dev
+
+      - name: Get UHBW version
+        run: |
+          uhb_whitelist --version
+
+      - name: Run Whitelist and prepare the test file
+        run: |
+          bash "${{ github.workspace }}/dev-tools/PrepareData.sh"
+
+      - name: Run Data testing
+        run: |
+          bash "${{ github.workspace }}/dev-tools/DataTesting.sh"
