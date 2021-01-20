@@ -43,7 +43,7 @@ jobs:
 
       - name: Install ldnsutils
         run: |
-          DEBIAN_FRONTEND=noninteractive apt-get -y install ldnsutils
+          sudo DEBIAN_FRONTEND=noninteractive apt-get -y install ldnsutils
 
       - name: Install PyFunceble
         run: |
