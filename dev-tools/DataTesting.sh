@@ -26,15 +26,15 @@ testFile="${git_dir}/PULL_REQUESTS/domains.txt"
 #testFile="${git_dir}/dev-tools/debug.list"
 
 ## Testing PyFunceble --rpz
-echo "Getting fresh RPZ zone"
+# echo "Getting fresh RPZ zone"
 
-getNewList () {
-	truncate -s 0 "${testFile}"
-	drill axfr @35.156.219.71 -p 53 porn.host.srv > "${testFile}"
-	# git add "${testFile}"
-  # git commit -m "test files updated ${version}" -a
-}
-getNewList
+# getNewList () {
+# 	truncate -s 0 "${testFile}"
+# 	drill axfr @35.156.219.71 -p 53 porn.host.srv > "${testFile}"
+# 	# git add "${testFile}"
+#   # git commit -m "test files updated ${version}" -a
+# }
+# getNewList
 
 echo "Print the head -n 5 of test files"
 
@@ -59,7 +59,6 @@ RunPyFunceble () {
     --dots \
     -h \
     --http \
-    --rpz \
     --autosave-minutes 15 \
     --share-logs \
     --hierarchical \
