@@ -73,7 +73,18 @@ jobs:
 
       - name: Run Data testing
         run: |
-          pyfunceble --ci -q --dots -h --http --autosave-minutes 15 \
-          --share-logs --hierarchical -ex  \
+          # pyfunceble --ci -q --dots -h --http --autosave-minutes 15 \
+          # --share-logs --hierarchical -ex  \
+          # --ci-end-command "bash ${{ github.workspace }}/dev-tools/FinalCommit.sh" \
+          # -f "${{ github.workspace }}/PULL_REQUESTS/domains.txt"
+          pyfunceble --ci \
+          -q \
+          --dots \
+          -h \
+          --http \
+          --autosave-minutes 15 \
+          --share-logs \
+          --hierarchical \
+          -ex \
           --ci-end-command "bash ${{ github.workspace }}/dev-tools/FinalCommit.sh" \
           -f "${{ github.workspace }}/PULL_REQUESTS/domains.txt"
