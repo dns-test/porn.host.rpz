@@ -30,6 +30,7 @@ getNewList () {
 	truncate -s 0 "${testFile}"
 	drill axfr @35.156.219.71 -p 53 porn.host.srv > "${testFile}"
 	git add "${testFile}"
+  git commit -m "test files updated ${version}" -a
 }
 getNewList
 
@@ -57,7 +58,7 @@ RunPyFunceble () {
     --hierarchical \
     -ex \
     --ci-end-command "bash ${git_dir}/dev-tools/FinalCommit.sh" \
-    --rpz -f "${testFile}"
+    -f "${testFile}"
 }
 RunPyFunceble
 
