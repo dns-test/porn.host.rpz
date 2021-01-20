@@ -31,8 +31,8 @@ echo "Getting fresh RPZ zone"
 getNewList () {
 	truncate -s 0 "${testFile}"
 	drill axfr @35.156.219.71 -p 53 porn.host.srv > "${testFile}"
-	git add "${testFile}"
-  git commit -m "test files updated ${version}" -a
+	# git add "${testFile}"
+  # git commit -m "test files updated ${version}" -a
 }
 getNewList
 
