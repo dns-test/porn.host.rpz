@@ -98,6 +98,6 @@ fi
 
 echo -e "\n\tNumber of cores availble: $(nproc)"
 
-head "${testFile}"
+head -n 2 "${testFile}"
 
 exit ${?}

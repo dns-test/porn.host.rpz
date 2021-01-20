@@ -20,44 +20,36 @@ version=$(date +%Y.%m)
 # ******************
 # Set our Input File
 # ******************
-testFile="${TRAVIS_BUILD_DIR}/PULL_REQUESTS/domains.txt"
-#testFile="${TRAVIS_BUILD_DIR}/dev-tools/debug.list"
+git_dir="$(git rev-parse --show-toplevel)"
 
-RunFunceble () {
+testFile="${git_dir}/PULL_REQUESTS/domains.txt"
+#testFile="${git_dir}/dev-tools/debug.list"
+
+RunPyFunceble () {
 
     #yeartag="$(date +%Y)"
     #monthtag="$(date +%m)"
 
     #ulimit -u
-    cd "${TRAVIS_BUILD_DIR}/dev-tools" || exit 1
+    cd "${git_dir}/dev-tools" || exit 1
 
     hash PyFunceble
 
-	printf "\n\tYou are running with RunFunceble\n\n"
-	PyFunceble --version
+	printf "\n\tYou are running with RunPyFunceble\n\n"
 
-        #PyFunceble --ci -h  \
-	    #-ex --plain --dns 127.0.0.1:5300 -vsc \
-            #--autosave-minutes 15 --share-logs --idna \
-            #--hierarchical --ci-branch "${TRAVIS_BRANCH}" \
-            #--ci-distribution-branch "${TRAVIS_BRANCH}" \
-            #--commit-autosave-message "V1.${version}.${TRAVIS_BUILD_NUMBER} [Auto Saved]" \
-            #--commit-results-message "V1.${version}.${TRAVIS_BUILD_NUMBER}" \
-            #--cmd-before-end "bash ${TRAVIS_BUILD_DIR}/dev-tools/FinalCommit.sh" \
-	     #-db --database-type mariadb \
-            #-f "${testFile}"
-
-	pyfunceble --ci -q -h -ex --plain \
-	  --dns 127.0.0.1:5300 -db --database-type mariadb \
-          --autosave-minutes 1 --share-logs --http --idna --dots \
-          --hierarchical --ci-branch "${TRAVIS_BRANCH}" \
-          --ci-distribution-branch "${TRAVIS_BRANCH}" \
-          --commit-autosave-message "${version}.${TRAVIS_BUILD_NUMBER} [Auto Saved]" \
-          --commit-results-message "${version}.${TRAVIS_BUILD_NUMBER}" \
-          --cmd-before-end "bash ${git_dir}/dev-tools/FinalCommit.sh" \
-          --rpz -f "${testFile}"
+	pyfunceble --ci \
+    -q \
+    --dots \
+    -h \
+    --http \
+    --autosave-minutes 15 \
+    --share-logs \
+    --hierarchical \
+    -ex \
+    --ci-end-command "bash ${git_dir}/dev-tools/FinalCommit.sh" \
+    --rpz -f "${testFile}"
 }
-RunFunceble
+RunPyFunceble
 
 exit ${?}
 
