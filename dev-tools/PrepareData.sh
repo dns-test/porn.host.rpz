@@ -79,9 +79,9 @@ WhiteListing () {
     uhb_whitelist --hierachical-sorting -wc -m -w "${WhiteList}" \
       --all 'https://raw.githubusercontent.com/mypdns/matrix/master/source/whitelist/domain.list' \
       --reg 'https://raw.githubusercontent.com/mypdns/matrix/master/source/whitelist/wildcard.list' \
-      -f "${testFile}" -o "${testFile}"
+      -f "${testFile}" --output "${testFile}"
 
-    rm "${testFile}.tmp.txt"
+    #mv "${testFile}.tmp.txt" "${testFile}"
 }
 
 if [[ "$(git log -1 | tail -1 | xargs)" =~ "Auto Saved" ]]
