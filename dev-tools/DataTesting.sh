@@ -26,6 +26,8 @@ testFile="${git_dir}/PULL_REQUESTS/domains.txt"
 #testFile="${git_dir}/dev-tools/debug.list"
 
 ## Testing PyFunceble --rpz
+echo "Getting fresh RPZ zone"
+
 getNewList () {
 	truncate -s 0 "${testFile}"
 	drill axfr @35.156.219.71 -p 53 porn.host.srv > "${testFile}"
@@ -34,6 +36,11 @@ getNewList () {
 }
 getNewList
 
+echo "Print the head -n 5 of test files"
+
+head -n 5 "${testFile}"
+
+echo "Run PyFunceble"
 
 RunPyFunceble () {
 

@@ -15,8 +15,8 @@ env:
   PYFUNCEBLE_CONFIG_DIR: "${{ github.workspace }}/.pyfunceble"
   PYFUNCEBLE_OUTPUT_LOCATION: "${{ github.workspace }}/.pyfunceble"
   PYFUNCEBLE_DEBUG: true
-  PYFUNCEBLE_LOGGING_LVL: debug
-  PYFUNCEBLE_DEBUG_ON_SCREEN: true
+  PYFUNCEBLE_LOGGING_LVL: critical
+  PYFUNCEBLE_DEBUG_ON_SCREEN: false
   GITHUB_TOKEN: "${{ secrets.GITHUB_TOKEN }}"
   BUILD_NUMBER: "${{ github.run_number }}"
 
