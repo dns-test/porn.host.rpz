@@ -67,9 +67,9 @@ jobs:
         run: |
           bash "${{ github.workspace }}/dev-tools/PrepareData.sh"
 
-      - name: Run Data testing
-        run: |
-          bash "${{ github.workspace }}/dev-tools/DataTesting.sh"
+      #- name: Run Data testing
+      #  run: |
+      #    bash "${{ github.workspace }}/dev-tools/DataTesting.sh"
 
       - name: Run Data testing
         run: |
