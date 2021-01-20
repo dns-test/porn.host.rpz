@@ -25,6 +25,15 @@ git_dir="$(git rev-parse --show-toplevel)"
 testFile="${git_dir}/PULL_REQUESTS/domains.txt"
 #testFile="${git_dir}/dev-tools/debug.list"
 
+## Testing PyFunceble --rpz
+getNewList () {
+	truncate -s 0 "${testFile}"
+	drill axfr @35.156.219.71 -p 53 porn.host.srv > "${testFile}"
+	git add "${testFile}"
+}
+getNewList
+
+
 RunPyFunceble () {
 
     #yeartag="$(date +%Y)"
@@ -42,6 +51,7 @@ RunPyFunceble () {
     --dots \
     -h \
     --http \
+    --rpz \
     --autosave-minutes 15 \
     --share-logs \
     --hierarchical \
