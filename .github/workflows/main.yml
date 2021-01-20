@@ -61,9 +61,9 @@ jobs:
         run: |
           uhb_whitelist --version
 
-      - name: Run Whitelist and prepare the test file
-        run: |
-          bash "${{ github.workspace }}/dev-tools/PrepareData.sh"
+      # - name: Run Whitelist and prepare the test file
+      #   run: |
+      #     bash "${{ github.workspace }}/dev-tools/PrepareData.sh"
 
       - name: Run Data testing
         run: |
