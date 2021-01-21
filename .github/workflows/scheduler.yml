@@ -1,7 +1,7 @@
 name: Launch a new test
 on:
   schedule:
-    - cron: "*/20 * * * *"
+    - cron: "55 * * * *"
 
 env:
   GIT_NAME: "${{ secrets.GIT_BOT_NAME }}"

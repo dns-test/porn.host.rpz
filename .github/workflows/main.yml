@@ -6,6 +6,8 @@ on:
   pull_request:
     branches:
       - "master"
+  schedule:
+    - cron: "0 * * * *"
 
 env:
   PYFUNCEBLE_AUTO_CONFIGURATION: "YES"
@@ -82,7 +84,7 @@ jobs:
           --dots \
           -h \
           --http \
-          --autosave-minutes 15 \
+          --autosave-minutes 45 \
           --share-logs \
           --hierarchical \
           -ex \
