@@ -42,7 +42,7 @@ cli_testing:
     local_network: false
     max_workers: null
     mining: false
-    preload_file: false
+    preload_file: true
     sorting_mode:
         hierarchical: true
         standard: true
@@ -63,7 +63,6 @@ dns:
     - 185.38.24.52
     - 198.180.150.12
     - 94.126.178.9
-    - 192.168.1.1
     - 91.239.100.100
     - 89.233.43.71
     - 198.180.150.12
