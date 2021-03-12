@@ -1008,7 +1008,9 @@
         "myasustor.com",
         "balena-devices.com",
         "betainabox.com",
+        "boutir.com",
         "bplaced.com",
+        "cafjs.com",
         "br.com",
         "cn.com",
         "de.com",
@@ -5437,7 +5439,6 @@
         "org.mz"
     ],
     "na": [
-        "in.na",
         "info.na",
         "pro.na",
         "name.na",
@@ -5447,6 +5448,7 @@
         "us.na",
         "mx.na",
         "ca.na",
+        "in.na",
         "cc.na",
         "tv.na",
         "ws.na",
