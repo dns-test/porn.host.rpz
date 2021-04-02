@@ -180,7 +180,8 @@
         "netlify.app",
         "northflank.app",
         "telebit.app",
-        "vercel.app"
+        "vercel.app",
+        "bookonline.app"
     ],
     "ar": [
         "com.ar",
@@ -1392,6 +1393,8 @@
         "wafflecell.com",
         "idnblogger.com",
         "indowapblog.com",
+        "reserve-online.com",
+        "hotelwithflight.com",
         "remotewd.com",
         "pages.wiardweb.com",
         "woltlab-demo.com",
@@ -2245,7 +2248,7 @@
         "sar.it",
         "sardegna.it",
         "sardinia.it",
-        "sic.it",
+        "an.it",
         "sicilia.it",
         "sicily.it",
         "taa.it",
@@ -2319,7 +2322,6 @@
         "alessandria.it",
         "alto-adige.it",
         "altoadige.it",
-        "an.it",
         "ancona.it",
         "andria-barletta-trani.it",
         "andria-trani-barletta.it",
@@ -5641,6 +5643,7 @@
         "torproject.net",
         "pages.torproject.net",
         "fastblog.net",
+        "reserve-online.net",
         "community-pro.net",
         "meinforum.net",
         "yandexcloud.net",
