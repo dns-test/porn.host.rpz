@@ -7519,9 +7519,9 @@
         "org.sz"
     ],
     "tc": [
+        "we.tc",
         "ch.tc",
-        "me.tc",
-        "we.tc"
+        "me.tc"
     ],
     "td": [
         "blogspot.td"
