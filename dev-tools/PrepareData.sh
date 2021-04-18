@@ -1,7 +1,7 @@
 #!/usr/bin/env bash
 
 # https://www.mypdns.org/
-# Copyright: Content: https://gitlab.com/spirillen
+# Copyright: Content: https://www.mypdns.org/p/Spirillen/
 # Source:Content:
 #
 # Original attributes and credit
@@ -11,7 +11,7 @@
 # as long the original URL and attribution is included.
 
 # Please forward any additions, corrections or comments by logging an issue at
-# https://gitlab.com/my-privacy-dns/support/issues
+# https://www.mypdns.org/maniphest/
 
 set -e #-x
 
@@ -96,7 +96,7 @@ else
 	  #WhiteListing
 fi
 
-echo -e "\n\tNumber of cores availble: $(nproc)"
+echo -e "\n\tNumber of cores available: $(nproc)"
 
 head -n 2 "${testFile}"
 
