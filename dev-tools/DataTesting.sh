@@ -55,16 +55,14 @@ RunPyFunceble () {
 	printf "\n\tYou are running with RunPyFunceble\n\n"
 
 	pyfunceble --ci \
-    -q \
-    --dots \
-    -h \
-    --http \
-    --autosave-minutes 15 \
-    --share-logs \
-    --hierarchical \
-    -ex \
-    --ci-end-command "bash ${git_dir}/dev-tools/FinalCommit.sh" \
-    -f "${testFile}"
+		-q \
+		--dots \
+		-h \
+		--autosave-minutes 45 \
+		--hierarchical \
+		-ex \
+		--ci-end-command "bash ${git_dir}/dev-tools/FinalCommit.sh" \
+		-f "${testFile}"
 }
 RunPyFunceble
 
