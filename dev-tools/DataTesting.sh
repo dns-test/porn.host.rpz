@@ -57,8 +57,7 @@ RunPyFunceble () {
 	pyfunceble --ci \
 		-q \
 		--dots \
-		-h \
-		--autosave-minutes 45 \
+		--ci-max-minutes 45 \
 		--hierarchical \
 		-ex \
 		--ci-end-command "bash ${git_dir}/dev-tools/FinalCommit.sh" \
