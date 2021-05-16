@@ -1865,7 +1865,8 @@
         "gov.gr",
         "net.gr",
         "nym.gr",
-        "org.gr"
+        "org.gr",
+        "org.hk"
     ],
     "group": [
         "discourse.group"
@@ -5436,6 +5437,7 @@
         "theater.museum",
         "time.museum",
         "timekeeping.museum",
+        "topology.museum",
         "torino.museum",
         "touch.museum",
         "town.museum",
@@ -6480,7 +6482,6 @@
         "tokke.no",
         "tolga.no",
         "tonsberg.no",
-        "topology.museum",
         "torsken.no",
         "tr.no",
         "trana.no",
