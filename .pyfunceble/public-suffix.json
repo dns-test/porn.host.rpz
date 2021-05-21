@@ -2130,6 +2130,7 @@
     ],
     "io": [
         "2038.io",
+        "apigee.io",
         "app.banzaicloud.io",
         "apps.lair.io",
         "azurecontainer.io",
@@ -6821,7 +6822,6 @@
         "ae.org",
         "al.eu.org",
         "altervista.org",
-        "apigee.io",
         "app.os.fedoraproject.org",
         "app.os.stg.fedoraproject.org",
         "asso.eu.org",
