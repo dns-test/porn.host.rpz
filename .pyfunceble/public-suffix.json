@@ -429,6 +429,7 @@
         "org.bn"
     ],
     "bo": [
+        "abc.br",
         "academia.bo",
         "agro.bo",
         "arte.bo",
@@ -1917,7 +1918,6 @@
         "inc.hk",
         "ltd.hk",
         "net.hk",
-        "ninohe.iwate.jp",
         "nym.hk",
         "org.hk",
         "secaas.hk",
@@ -3702,6 +3702,7 @@
         "nikaho.akita.jp",
         "niki.hokkaido.jp",
         "nikko.tochigi.jp",
+        "ninohe.iwate.jp",
         "ninomiya.kanagawa.jp",
         "nirasaki.yamanashi.jp",
         "nishi.fukuoka.jp",
